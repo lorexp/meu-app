@@ -3,7 +3,7 @@
 ## **Node**
 
 Clique [Aqui](https://nodejs.org/en/) e baixe a versão 12.16.3 LTS.
-![image info](./node.png)
+![image info](./images/node.png)
 
 Ao final da instalação, abra o CMD ou o Git Bash e verifique se a versão foi instalada corretamente utilizando os seguintes comandos:
 
@@ -13,7 +13,7 @@ $ node -v && npm -v
 
 Se tudo ocorreu bem durante a instalação, a saída será assim:
 
-![image info](./version.png)
+![image info](./images/version.png)
 
 ## Editor
 
@@ -33,7 +33,7 @@ $ npx create-react-app meu-app
 
 O create-react-app criará todas as pastas e configurações necessárias para darmos inicio ao projeto. Aguarde até o final da execução do comando. A saída no terminal será essa:
 
-![image info](./create-react-app.png)
+![image info](./images/create-react-app.png)
 
 Logo após, utilizaremos o comando:
 
@@ -77,11 +77,11 @@ $ npm start
 ```
 
 Com isto, abrirá em seu navegador no endereço `localhost:3000` a seguinte página
-![image info](./react-rodando.png)
+![image info](./images/react-rodando.png)
 
 E em seu console:
 
-![image info](./console.png)
+![image info](./images/console.png)
 
 ### Removendo alguns arquivos no nosso diretório
 
@@ -95,10 +95,10 @@ Removeremos os seguintes arquivos de dentro da pasta `src`:
 
 Selecione-os e delete da pasta
 
-![image info](./remover.png)
+![image info](./images/remover.png)
 
 OPA!!! Algo deu errado.
-![image info](./erro_deletar.png)
+![image info](./images/erro_deletar.png)
 
 Fique tranquilo(a), precisamos remover também as importações dentro dos arquivos `App.js` e `index.js`
 
@@ -106,26 +106,26 @@ Fique tranquilo(a), precisamos remover também as importações dentro dos arqui
 
 ## ANTES:
 
-![image info](./app_before.png)
+![image info](./images/app_before.png)
 
 ## DEPOIS:
 
-![image info](./app_after.png)
+![image info](./images/app_after.png)
 
 ## `index.js`
 
 ## ANTES:
 
-![image info](./index_before.png)
+![image info](./images/index_before.png)
 
 ## DEPOIS:
 
-![image info](./index_after.png)
+![image info](./images/index_after.png)
 
 ### Agora estamos prontos para criarmos nossa primeira página.
 
-![image info](./hello_world.png)
+![image info](./images/hello_world.png)
 
 ### Dentro da pasta `src` criaremos outras duas pastas chamandas de `views` e `components`, ficando da seguinte forma:
 
-![image info](./src_after.png)
+![image info](./images/src_after.png)
