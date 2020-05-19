@@ -1,68 +1,131 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Pré-Requisitos
 
-## Available Scripts
+## **Node**
 
-In the project directory, you can run:
+Clique [Aqui](https://nodejs.org/en/) e baixe a versão 12.16.3 LTS.
+![image info](./node.png)
 
-### `yarn start`
+Ao final da instalação, abra o CMD ou o Git Bash e verifique se a versão foi instalada corretamente utilizando os seguintes comandos:
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```console
+$ node -v && npm -v
+```
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Se tudo ocorreu bem durante a instalação, a saída será assim:
 
-### `yarn test`
+![image info](./version.png)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Editor
 
-### `yarn build`
+Use o seu editor de preferência, caso não tenho um editor instalado, recomendo o [VSCode](https://code.visualstudio.com/)
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Iniciando um projeto React
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Nosso aplicativo será uma página de consulta a API do github, onde entraremos com um nome de usuário e exibiremos suas informações.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Create-react-app
 
-### `yarn eject`
+Escolha um diretório de sua preferência e abra o terminal (ou CMD) e digite o seguinte comando:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```console
+$ npx create-react-app meu-app
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+O create-react-app criará todas as pastas e configurações necessárias para darmos inicio ao projeto. Aguarde até o final da execução do comando. A saída no terminal será essa:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+![image info](./create-react-app.png)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Logo após, utilizaremos o comando:
 
-## Learn More
+```console
+$ cd meu-app
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Teremos a seguinte estrutura:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+meu-app
+├── README.md
+├── node_modules
+├── package.json
+├── .gitignore
+├── public
+│   ├── favicon.ico
+│   ├── index.html
+│   └── manifest.json
+└── src
+    ├── App.css
+    ├── App.js
+    ├── App.test.js
+    ├── index.css
+    ├── index.js
+    ├── logo.svg
+    └── serviceWorker.js
+    └── setupTests.js
+```
 
-### Code Splitting
+Agora instalaremos a biblioteca [AXIOS](https://github.com/axios/axios) para fazermos requisições HTTP.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+```console
+$ npm i axios
+```
 
-### Analyzing the Bundle Size
+Ao final da instalação poderemos dar início ao aplicativo
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+```console
+$ npm start
+```
 
-### Making a Progressive Web App
+Com isto, abrirá em seu navegador no endereço `localhost:3000` a seguinte página
+![image info](./react-rodando.png)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+E em seu console:
 
-### Advanced Configuration
+![image info](./console.png)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+### Removendo alguns arquivos no nosso diretório
 
-### Deployment
+Removeremos os seguintes arquivos de dentro da pasta `src`:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+- App.css
+- App.test.js
+- index.css
+- logo.svg
+- setupTests.js
 
-### `yarn build` fails to minify
+Selecione-os e delete da pasta
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+![image info](./remover.png)
+
+OPA!!! Algo deu errado.
+![image info](./erro_deletar.png)
+
+Fique tranquilo(a), precisamos remover também as importações dentro dos arquivos `App.js` e `index.js`
+
+## `App.js`
+
+## ANTES:
+
+![image info](./app_before.png)
+
+## DEPOIS:
+
+![image info](./app_after.png)
+
+## `index.js`
+
+## ANTES:
+
+![image info](./index_before.png)
+
+## DEPOIS:
+
+![image info](./index_after.png)
+
+### Agora estamos prontos para criarmos nossa primeira página.
+
+![image info](./hello_world.png)
+
+### Dentro da pasta `src` criaremos outras duas pastas chamandas de `views` e `components`, ficando da seguinte forma:
+
+![image info](./src_after.png)
