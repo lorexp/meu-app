@@ -4,7 +4,7 @@ const User = ({ user }) => {
   return (
     <>
       <div>
-        {user.name ? (
+        {user.login ? (
           <>
             <h3>{user.name}</h3>
             <img src={user.avatar_url} width={100} height={100} alt="..." />

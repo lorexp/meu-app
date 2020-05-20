@@ -8,7 +8,6 @@ export default class View extends Component {
   state = {
     input: "",
     user: {},
-    repos: [],
   };
 
   handleInputChange = (e) => {
